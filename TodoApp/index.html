@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TodoApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+<div class="main">        
+    <div id="input">
+        <input type="text" name="" id="inn">
+        <button class="add">Add</button>
+    </div>
+    <div id="list">
+        <div id="todo">
+            <h3>todo</h3>
+            <div class="theTodo">
+                <div class="item">
+                    <span>Read a book</span>
+                    <div class="btns">
+                        <button class="done"><i class="fa fa-check"></i></button>
+                        <button class="delete"><i class="fa fa-remove"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="done">
+            <h3>Done</h3>
+            <div class="theDone">
+                <div class="item">
+                    <span>Read a book</span>
+                    <div class="btns">
+                        <button class="done"><i class="fa fa-check"></i></button>
+                        <button class="delete"><i class="fa fa-remove"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="later">
+            <h3>later</h3>
+            <div class="later">
+                <div class="item">
+                    <span>Read a book</span>
+                    <div class="btns">
+                        <button class="done"><i class="fa fa-check"></i></button>
+                        <button class="delete"><i class="fa fa-remove"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./index.js"></script>
 </body>
 </html>
