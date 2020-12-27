@@ -1,3 +1,5 @@
+/*color palattes : https://mycolor.space/?hex=%23150B36&sub=1*/
+
 body{
     background-color:#150b36;
     color:white;
@@ -54,10 +56,11 @@ body{
     align-items: center;
 }
 
-#theTodo, #theDone, #theLater{
-    border:1px groove #f8ebff;
-    padding:2.5em;
-    border-radius: 25px;
+.theTodo, .theDone, .theLater{
+    border-top:4px solid #601f50;
+    border-bottom:4px solid #601f50;
+    padding:0.5em;
+    border-radius: 10px;
 }
 
 
@@ -70,9 +73,8 @@ body{
     justify-content: space-between;
     padding:0.5em;
     width:13em;
-    border-top:4px solid #601f50;
-    border-bottom:4px solid #601f50;
-    border-radius: 10px;
+    border-radius: 1px;
+    border-bottom: 1px groove #601f50;
 }
 
 .done{
