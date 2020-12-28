@@ -1,0 +1,134 @@
+body{
+    background-color:#150b36;
+}
+
+main{
+  margin-top:2.5em;
+  display:flex;
+  flex-direction:column;
+  color:white;
+}
+
+#top{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  align-items:center;
+}
+
+#topLeft{
+  display:flex;
+  align-items:center;
+}
+
+#topLeft #numb{
+  font-size:40px;
+  margin-right:0.1em;
+}
+
+#topLeft div{
+  display:flex; 
+  flex-direction:column;
+}
+
+#progressBar{
+}
+
+#inputField{
+  display:flex;
+  justify-content:right;
+  margin:1.6em auto;
+  padding:0.5em;
+  width:24em;
+  background-color:#3D345A;
+}
+
+#inputField input[type="text"]{
+  border:none;
+  width:25em;
+  background-color:transparent;
+  color:white;
+}
+
+#inputField input[type="text"]:focus{
+  outline:none;
+}
+
+#inputField button{
+  border:none;
+  padding:0.1em;
+  width:2.5em;
+  font-size:1.2em;
+  background-color:transparent;
+  color:white;
+}
+
+#List{
+  margin:0 auto;
+  width:25em;
+}
+
+#List section{
+  margin-top:1.4em;
+}
+
+.title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size: large;
+  color:#f9b155;
+  padding-bottom: 0.3em;
+}
+
+.title:hover{
+  cursor:pointer;
+}
+
+.item{
+  display:flex;
+  justify-content:space-between;
+  padding:0.7em;
+  align-items:center;
+  border-radius:5px;
+  background-color:#211A38;
+}
+
+.item .actions:hover{
+  cursor:pointer;
+}
+
+.item .actions .delete{
+  font-size:18px;
+}
+
+.Complete{
+  display:flex;
+  justify-content:center;
+  padding:0.7em;
+  align-items:center;
+  border-radius:5px;
+  background-color:#211A38;
+}
+
+.done{
+  color:#00c9a2;
+}
+
+.delete{
+  color:#a63f59;
+}
+
+.paused{
+  color:#f9f871;
+}
+
+#footer{
+  margin-top:5em;
+  text-align:center;
+}
+
+#footer a{
+color:black;
+text-decoration:none;
+}

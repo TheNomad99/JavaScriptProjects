@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div id="top">
+          <section id="topLeft">
+            <span id="numb">28</span>
+            <div>
+              <span>Dec</span>
+              <span>2020</span>
+            </div> 
+          </section>
+          <section>
+            <span id="weekday">Monday</span>
+          </section>
+        </div>
+        <div id="progressBar"></div>
+        <div id="inputField">
+          <input type="text" placeholder="Add Items" id="input"/>
+          <button id="add"><i class="fa fa-plus"></i></button>
+        </div>
+        <div id="List">
+          <section id="todos">
+            <div class="item">
+              <span class="theTodo">Read a Book</span>
+              <div class="actions">
+                <span onclick="handle(event)" class="delete"><i class="fa fa-remove"></i></span>
+                <span onclick="handle(event)" class="paused"><i class="fa fa-pause"></i></span>
+                <span onclick="handle(event)" class="done"><i class="fa fa-check"></i></span>
+              </div>
+            </div>
+          </section>
+          <section id="DoLater">
+            <span class="title">Do Later <i class="fa fa-arrow-down"></i></span>
+          </section>
+          <section id="Completed">
+            <span class="title">Completed <i class="fa fa-arrow-down"></i></span>
+            <div class="Complete">
+                <span class="theTodo">Taking a walk</span>
+            </div>
+          </section>
+        </div>
+        <span id="footer">Inspired by the project <br/> <a href="https://github.com/cassidoo/todometer" target="_blank" style="color:#f9b155"><b>Todometer</b></a> <br/> made by <a href="https://github.com/cassidoo" target="_blank" style="color:#dc7156">cassidoo</a>  </span>
+      </main>
+      <script src="./index.js"></script>
+</body>
+</html>
