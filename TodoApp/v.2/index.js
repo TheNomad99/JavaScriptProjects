@@ -11,7 +11,7 @@ add.addEventListener('click', () => {
     else if(text.value.length>0){
     let template = 
     `<div class="item">
-      <span class="theTodo">`+text.value+`</span>
+      <span class="theTodo">${text.value}</span>
       <div class="actions">
        <span onclick="handle(event)" class="delete"><i class="fa fa-remove"></i></span>
        <span onclick="handle(event)" class="paused"><i class="fa fa-pause"></i></span>
@@ -29,11 +29,11 @@ add.addEventListener('click', () => {
 
 function template (Thetext,state){
     if(state === 'Completed'){
-    return `<div class="Complete"><span class="theTodo">`+Thetext+`</span></div>`;
+    return `<div class="Complete"><span class="theTodo">${Thetext}</span></div>`;
     }
     else if (state === 'Paused'){
         return `<div class="item">
-        <span class="theTodo">`+Thetext+`</span>
+        <span class="theTodo">${Thetext}</span>
         <div class="actions">
          <span onclick="handle(event)" class="delete"><i class="fa fa-remove"></i></span>
          <span onclick="handle(event)" class="done"><i class="fa fa-check"></i></span>

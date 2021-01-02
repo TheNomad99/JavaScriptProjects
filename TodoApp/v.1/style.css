@@ -12,18 +12,21 @@ body{
 }
 
 #input{
-    margin-top:5em;
+    margin:0 auto;
+    margin-top: 5em;
+    padding:0.5em;
     display: flex;
-    justify-content: center;
-    background-color:#150b36;
+    justify-content: space-between;
+    background-color:#22154b;
+    width:30em;
 }
 
 #input #inn{
     border:none;
-    border-bottom:1px solid #005c8d;
-    background-color:#150b36;
+    /* border-bottom:1px solid #005c8d; */
+    background-color:transparent;
     color:white;
-    width:15em;
+    width:24em;
     font-size: 20px;
 }
 
@@ -32,14 +35,16 @@ body{
 }
 
 #input button{
-    background-color:#005c8d;
+    background-color:transparent;
     margin-left:1.5em;
     border:none;
 }
 
 #list{
     display:flex;
-    flex-direction: row;
+    margin-top: 0.3em;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
     font-size: 25px;
 }
@@ -50,7 +55,7 @@ body{
 }
 
 #todo, #done, #later{
-    margin-top:5em;
+    margin-top:1.2em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,11 +73,16 @@ body{
     text-decoration: line-through;
 }
 
+#done h3{
+    display: flex;
+    justify-content: space-between;
+}
+
 .item{
     display: flex;
     justify-content: space-between;
     padding:0.5em;
-    width:13em;
+    width:23em;
     border-radius: 1px;
     border-bottom: 1px groove #601f50;
 }
@@ -89,4 +99,30 @@ body{
 
 h3{
     color:#f9b155;
+}
+
+.checked {
+    text-decoration:line-through;
+    
+}
+
+.checked .btns .done{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    #list{
+        display: flex;
+        flex-direction: column;
+        margin-bottom:2.3em;
+    }
+
+    #todo, #done, #later{
+        margin-top:1.3em;
+    }
+
+    .item{
+        width:10em;
+    }
+
 }
