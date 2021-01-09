@@ -1,0 +1,121 @@
+*{
+    margin:0;padding:0;
+}
+
+body{
+    background:rgb(19, 19, 19);
+}
+
+#sidebar{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1d2127;
+    overflow-x: hidden;
+    padding-top: 20px;
+    color:white;
+    padding:2.5em;
+}
+#sidebar ul li{
+    list-style-type: none;
+    margin-top:4.5em;
+    text-align: left;
+}
+
+#sidebar ul li i{
+    margin-right:1.3em;
+}
+#sidebar ul li:hover{
+    cursor: pointer;
+}
+
+#sidebar button{
+    margin-top: 10em;
+    border:none;
+    color:white;
+    height:6em;
+    width:6em;
+    padding:1.5em;
+    border-radius: 50%;
+    background:rgb(19, 19, 19);
+    transition: 0.3 ease-in-out;
+}
+
+#sidebar button i{
+    font-size: 30px;
+}
+
+#sidebar button:hover{
+   box-shadow: 2px 4px 4px 2px rgb(29, 28, 28);
+   cursor: pointer;
+}
+
+#main{
+    margin:0 auto;
+    background:rgb(19, 19, 19);
+    height: 100vh;
+
+}
+
+#topbar {
+ display:flex;
+ width:35em;
+ justify-content: center;
+ margin-top:3em;
+ margin:3em auto;
+ border-radius: 5px;
+ background-color: #1d2127;
+ height:3em;
+ padding-left:2.3em;
+ 
+}
+
+#topbar button{
+    border:none;
+    background: transparent;
+    margin-right: 2.3em;
+    transition: 0.3s;
+    border-radius: 5px;
+    color:white;
+    padding:0.2em;
+    margin-top:0.7em;
+    width:5em;
+    height: 2em;
+}
+
+#topbar button:focus{
+    background-color: #252a30;
+    border-radius: 25px;
+}
+
+#text{
+    height:50vh;
+    margin-top:3em;
+    margin-left:15em;
+    padding-left:2.4em;
+    color:white;
+}
+
+#title{
+    font-size:35px;
+    border-bottom: 1px solid white;
+    width:9em;
+}
+
+#title:focus{
+    outline:none;
+}
+
+#mainText{
+    margin-top: 1.4em;
+    padding-right:2.4em;
+    line-height: 1.7em;
+    font-size:20px;
+}
+
+#mainText:focus{
+    outline:none;
+}
