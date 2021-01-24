@@ -1,0 +1,19 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.item .card{
+    text-align: center;
+}
+
+.item{
+    text-align: center;
+}
