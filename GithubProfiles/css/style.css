@@ -1,0 +1,46 @@
+nav{
+   border-bottom: 1px groove black;
+   display: flex; 
+   justify-content: space-between;
+}
+
+nav ul li{
+    display: inline;
+    margin:2.3em;
+}
+
+#main{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+#searchbar{
+   display: flex;
+   align-items: center;
+   width:15em;
+   border:1px groove black;
+   padding:0.5em;
+}
+
+#searchbar input[type="text"]{
+    border:none; 
+    padding:0.4em;
+    width:14em
+}
+
+#searchbar button{
+    border:none;
+    background-color: transparent;
+}
+
+.profile{
+    border:1px solid black;
+    padding:0.3em;
+    margin:0.7em;
+    width:33em;
+    text-align: center;
+}
