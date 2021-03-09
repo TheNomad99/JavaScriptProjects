@@ -5,30 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/style.css">
-    <script
+    <!-- <script
 			  src="https://code.jquery.com/jquery-3.5.1.min.js"
 			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
               crossorigin="anonymous"></script>
-              <script src="./main/index.js"></script>
+              <script src="./main/index.js"></script> -->
     <title>Github Profiles</title>
 </head>
 <body>
-    <nav>
-        <img src="https://github.githubassets.com/favicons/favicon.svg" alt="">
-        <ul>
-            <li>Home</li>
-            <li>Home</li>
-            <li>Home</li>
-        </ul>
-    </nav>
-    <div id="main">
-        <div id="searchbar">
-            <input type="text" id="search" placeholder="skriv inn brukernavn"/>
-            <button onclick=""><i class="material-icons">search</i></button>
+  <h3>Github API</h3>
+     <form>
+       <input type="text" placeholder="write in github username" id="username">
+       <button><i class="material-icons">search</i></button>
+     </form>
+     <div id="display">
+       <div class="item" onclick="window.location.href=''">
+         <span class="name">Name</span><span class="usr">@Username</span><span class="desc">Hi I am new at coding</span>
         </div>
-        <div id="table">
-               
-        </div>
-    </div> 
+       <div id="FeilM">finner ingenting med det navnet</div>
+     </div>
+     
 </body>
 </html>

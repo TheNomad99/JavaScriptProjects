@@ -1,46 +1,69 @@
-nav{
-   border-bottom: 1px groove black;
-   display: flex; 
-   justify-content: space-between;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    font-family:'Open Sans', sans-serif;
 }
 
-nav ul li{
-    display: inline;
-    margin:2.3em;
+h3{
+    text-align: center;
 }
 
-#main{
-    margin-top: 3em;
+form{
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+form input[type="text"]{
+    width:15em;
+    padding:0.3em;
+    border:1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+form input[type="text"]:focus{
+    outline: none;
+}
+
+form button{
+    border-radius: 5px;
+    border:none;
+    padding:0.5em;
+    margin-left:0.3em;
+}
+
+#display{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
+    margin-top:1.2em;
+    margin:0.5rem auto;
+    width:50%;
 }
 
-
-#searchbar{
-   display: flex;
-   align-items: center;
-   width:15em;
-   border:1px groove black;
-   padding:0.5em;
-}
-
-#searchbar input[type="text"]{
-    border:none; 
-    padding:0.4em;
-    width:14em
-}
-
-#searchbar button{
-    border:none;
-    background-color: transparent;
-}
-
-.profile{
-    border:1px solid black;
-    padding:0.3em;
-    margin:0.7em;
-    width:33em;
+#FeilM{
     text-align: center;
+    padding:3rem;
+    border:1px solid #dee2e6;
+    box-shadow:0 1rem 3rem rgba(0,0,0,.175);
+    border-radius: .25rem;
+    display:none;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border:1px solid #dee2e6;
+    padding:.25rem;
+    width:100%;
+}
+
+.item .name{
+    color:rgb(31, 31, 184);
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.item .desc{
+    margin-top:0.2em;
 }
