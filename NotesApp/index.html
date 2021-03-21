@@ -3,30 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>NotesApp</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="sidebar">
-        <ul>
-            <li><i class="fas fa-inbox"></i> All Notes</li>
-            <li><i class="fas fa-book"></i> Notebook</li>
-            <li><i class="fas fa-heart"></i> Favorite</li>
-            <li><i class="fas fa-trash-alt"></i> Deleted</li>
-        </ul>
-        <button><i class="fas fa-plus"></i></button>
-    </div>
     <div id="main">
         <div id="topbar">
-            <button id="font-family">btn</button>
+            <button id="font-family"><i class="material-icons">format_color_text</i></button>
             <button id="font-size">btn</button>
             <button id="font-color">btn</button>
-            <button id="font-weight-bold"><i class="fas fa-bold"></i></button>
-            <button id="text-weight-i"><i class="fas fa-italic"></i></button>
-            <button id="text-style-undertext"><i class="fas fa-underline"></i></button>
-            <button id="text-align-left"><i class="fas fa-align-left"></i></button> 
-            <button id="text-align-center"><i class="fas fa-align-center"></i></button> 
-            <button id="text-align-right"><i class="fas fa-align-right"></i></button>
+            <button id="font-weight-bold"><i class="material-icons">format_italic</i></button>
+            <button id="text-weight-i"><i class="material-icons">format_bold</i></button>
+            <button  onclick="TextAlign('text-align-left')" id="text-style-undertext"><i class="material-icons">format_align_left</i></button>
+            <button id="text-align-left"><i class="material-icons">format_align_justify</i></button> 
+            <button onclick="TextAlign('text-align-center')" id="text-align-center"><i class="material-icons">format_align_center</i></button> 
+            <button onclick="TextAlign('text-align-right')" id="text-align-right"><i class="material-icons">format_align_right</i></button>
             <button id="list">btn</button>
         </div>
         <div id="text">
@@ -37,5 +29,6 @@
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script></body>
+    <script src="index.js"></script>
+</body>
 </html>
