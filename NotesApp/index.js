@@ -20,17 +20,20 @@ function TextAlign(cmd){
     else if (cmd == "text-align-right"){
         text.style.textAlign="right";
     }
+    else if(cmd == "text-align-justify"){
+        text.style.textAlign="justify";
+    }
 }
 
-function fontType(cmd){
+function fontweight(cmd){
     if(cmd == "bold"){
-
+        text.style.fontWeight="bold"
     }
     else if (cmd == "italic"){
-
+        text.style.fontWeight="italic"
     }
     else if (cmd == ""){
-
+        text.style.fontWeight="normal"
     }
 }
 
