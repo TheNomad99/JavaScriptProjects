@@ -1,22 +1,12 @@
 
-function gen(length,lan){
-    const letters = "ABCDFGHIJKLMNOPQRSTUVWYZÆØÅabcdfghjklmnopqrstuvwyzæøå_-,.£$€$£@!|/{[]}++?+";
+function gen(){
     const letters2 = "ABCDFGHIJKLMNOPQRSTUVWYZabcdfghjklmnopqrstuvwyz_-,.£$€$£@!|/{[]}++?+";
     let psw = "";
-    let len = length;
-    if(lan == "Nor"){
-        for(let i = 0; i<len; i++){
-            psw += letters.charAt(Math.floor(Math.random() * letters.length));
-        }
-    } else {
+    let len = 16;
         for(let i = 0; i<len; i++){
             psw += letters2.charAt(Math.floor(Math.random() * letters2.length));
         }
-    }   
-    return psw;
+   alert(psw)
 }
 
 
-
-console.log(gen(16).length)
-console.log(gen(16))
