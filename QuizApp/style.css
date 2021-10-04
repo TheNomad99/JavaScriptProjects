@@ -1,0 +1,28 @@
+#menue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10em 0;
+}
+
+#menue h3{
+    font-size: 2.4em;
+}
+
+#btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    margin-top:1.2em;
+    width:20em;
+    height:3em;
+    border-radius: 5px;
+    border:1px groove gray;
+}
+
+.btn:hover{
+    border-color: black;
+}
