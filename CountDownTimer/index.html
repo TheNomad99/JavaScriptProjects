@@ -8,27 +8,24 @@
     <title>CountDownTimer</title>
 </head>
 <body>
-    <main>
-        <h3>Welcome 2021!</h3>
-        <div class="info">
-            <div class="item">
-                <div class="card">02</div>
-                <span class="title">Weeks</span>
-            </div>
-            <div class="item">
-                <div class="card">02</div>
-                <span class="title">days</span>
-            </div>
-            <div class="item">
-                <div class="card">02</div>
-                <span class="title">minutes</span>
-            </div>
-            <div class="item">
-                <div class="card">02</div>
-                <span class="title">seconds</span>
-            </div>
+   <div class="d-flex flex-column align-items-center">
+        <div>
+            <h4>CountDownTimer</h4>
+            <p>Set the the time or date in which you want to countdown to</p>
         </div>
-    </main>
+        
+        <form class="form">
+            <div class="form-group">
+                <label  for="dato">For date</label>
+                <input class="form-control" type="date" name="dato" id="dato">
+            </div>
+            <div class="form-group">
+                <label  for="tid">Count down to a certain time in current date (meaning today)</label>
+                <input class="form-control" type="time" name="tid" id="tid">
+            </div>
+        </form>
+   </div>
+    
     <!-- <script src="./index.js"></script> -->
 </body>
 </html>

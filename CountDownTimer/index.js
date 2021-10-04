@@ -27,3 +27,38 @@ const x = setInterval(function(){
     // Minutes.innerHTML=minutes;
     // Seconds.innerHTML=seconds;
 },1000);
+
+function CountingDownMinutes(ags){
+    let setDate = new Date(ags);
+    let s = setInterval(() => {
+        let now = new Date().getTime();
+        let distance = setDate - now;
+        
+        let weeks = Math.floor(days/7);
+        let days = Math.abs(Math.floor(distance/ (1000*60*60*24)));
+        let hours = Math.abs(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+        let minutes = Math.abs(Math.floor((distance % (1000*60*60))/(1000*60)));
+        let seconds = Math.abs(Math.floor((distance % (1000 * 60)) / 1000));
+        if(weeks == 0 && days == 0 && hours == 0 && minutes == 0 && seconds == 0){
+            clearInterval(s)
+        }    
+    });
+
+}
+function CountingDownDays(date){
+    let setDate = new Date(date);
+    let s = setInterval(() => {
+        let now = new Date().getTime();
+        let distance = setDate - now;
+          
+        let weeks = Math.floor(days / 7);
+        let days = Math.abs(Math.floor(distance / (1000*60*60*24)));
+        let hours = Math.abs(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+        let minutes = Math.abs(Math.floor((distance % (1000*60*60)) / (1000*60)));
+        let seconds = Math.abs(Math.floor((distance % (1000 * 60)) / 1000));
+        if(weeks == 0 && days == 0 && hours == 0 && minutes == 0 && seconds == 0){
+            clearInterval(s)
+        }    
+    });
+
+}
