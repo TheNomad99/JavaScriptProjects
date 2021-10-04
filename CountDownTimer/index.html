@@ -8,22 +8,24 @@
     <title>CountDownTimer</title>
 </head>
 <body>
-   <div class="d-flex flex-column align-items-center">
-        <div>
+   <div class="d-flex flex-column align-items-center mt-5">
+        <div class="mt-4">
             <h4>CountDownTimer</h4>
             <p>Set the the time or date in which you want to countdown to</p>
         </div>
         
         <form class="form">
-            <div class="form-group">
+            <div class="form-group mt-3">
                 <label  for="dato">For date</label>
                 <input class="form-control" type="date" name="dato" id="dato">
             </div>
-            <div class="form-group">
+            <div class="form-group mt-3">
                 <label  for="tid">Count down to a certain time in current date (meaning today)</label>
                 <input class="form-control" type="time" name="tid" id="tid">
             </div>
         </form>
+
+        <button class="btn btn-primary">Start timer</button>
    </div>
     
     <!-- <script src="./index.js"></script> -->
