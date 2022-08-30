@@ -8,7 +8,7 @@ function getSelectionText() {
         text = document.selection.createRange().text;
     }
     return text;
-}
+} 
 
 function TextAlign(cmd){
     if(cmd == "text-align-center"){
